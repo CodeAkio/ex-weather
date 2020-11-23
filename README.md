@@ -1,21 +1,30 @@
-# App
+### Elixir - Parallel Weather App
 
-**TODO: Add description**
+#### How to use it
 
-## Installation
+Open lib/app/weather.ex and add your app ID into fuction get_appid.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `app` to your list of dependencies in `mix.exs`:
+- $ mix test
+- $ mix deps.get
+- $ iex -S mix
 
-```elixir
-def deps do
-  [
-    {:app, "~> 0.1.0"}
-  ]
-end
+``` ruby
+iex> cities = ["Rio de Janeiro", "Niteroi", "Sao Paulo", "Porto Alegre"]
+["Rio de Janeiro", "Niteroi", "Sao Paulo", "Porto Alegre"]
+
+iex> App.SimpleWeather.start cities
+["Rio de Janeiro: 30.3 °C", "Niteroi: 30.3 °C", "Sao Paulo: 28.0 °C",
+ "Porto Alegre: 25.8 °C"]
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/app](https://hexdocs.pm/app).
+``` ruby
+Compiling 1 file (.ex)
+....
 
+Finished in 0.9 seconds
+4 tests, 0 failures
+
+Randomized with seed 217833
+```
+
+#### Enjoy!
